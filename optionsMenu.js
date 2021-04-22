@@ -120,7 +120,7 @@ function exportEncryptedSave() {
 
 
 function importEncryptedSave() {
-	let q = prompt('Paste your save file here');
+	let q = prompt('在这里粘贴你的存档');
 	if (q != null) {
 		q = CryptoJS.AES.decrypt(q, 'notVerySecretHash');		// Decrypt save file
 		q = q.toString(CryptoJS.enc.Utf8);						// Required because the decrypter outputs hex instead of ascii by default. This reconverts it
@@ -142,7 +142,7 @@ function importEncryptedSave() {
 		cow.biome6CurrentStarCount = 0;
 		saveGame();
 		window.location.reload();
-	} else alert("Save import cancelled");
+	} else alert("导入存档已取消");
 	newFadePlusToggleAndVisibility(optionsMenu, 0, 0.25);
 }
 

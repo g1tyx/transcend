@@ -307,7 +307,7 @@ function decreaseVolume(bus) {
 function audioFormatSetup() {
 	// Internet Explorer
 	if (cow.userWebBrowser == 'IE') {
-		alert("Developer's note: This game doesn't support audio on Internet Explorer. Please consider using a more modern web browser like Firefox or Chrome.");
+		alert("开发商注：该游戏不支持Internet Explorer上的音频。 请考虑使用更现代的网络浏览器，例如Firefox或Chrome。");
 	}
 
 	// Safari
